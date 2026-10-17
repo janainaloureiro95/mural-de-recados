@@ -1,0 +1,8 @@
+<h1>Mural de Recados</h1>
+<% @messages.each do |message| %>
+    <div>
+        <p><%= message.content %></p>
+        <p><i> - <%= message.author %></i></p> 
+    </div> 
+<% end %>
+
