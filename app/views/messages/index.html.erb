@@ -1,7 +1,8 @@
 <h1>Mural de Recados</h1>
 
 <% if @messages.empty? %>
-     <p><u> Poxa... por enquanto sem recado, gostaria de deixar um?</u></p> 
+     <p><b> Poxa... por enquanto sem recado, gostaria de deixar um?</b></p>
+     <%= link_to "Novo recado", new_message_path %> 
 <% end %>
 
 <% @messages.each do |message| %>
